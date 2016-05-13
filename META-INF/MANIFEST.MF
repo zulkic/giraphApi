@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: giraphApi
+Bundle-SymbolicName: giraphApi
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: giraphApi.jar,
+ local/hadoop/hadoop-core-0.20.203.0.jar,
+ local/giraph/giraph-core/target/giraph-1.2.0-SNAPSHOT-for-hadoop-1.2.1-jar-with-dependencies.jar
+Export-Package: giraph.api
