@@ -7,9 +7,10 @@ public class CantidadDeAmigos extends NodeComputation {
 
 	@Override
 	public void compute(PNode pNode, Iterable<Text> messages) {
-		System.out.println("holamundo");
-		//pNode.setNodePropertyValue("Friends", Integer.toString(pNode.getNumPEdges()));
+		pNode.setNodePropertyValue("Friends", Integer.toString(pNode.getNumPEdges()));
+		for (PEdge pedge : pNode.getPEdges()) {
+			System.out.println("la edad es:" + pedge.getEdgePropertyValue("distance") );
+		}
 		pNode.voteToHalt();
 	}
-
 }

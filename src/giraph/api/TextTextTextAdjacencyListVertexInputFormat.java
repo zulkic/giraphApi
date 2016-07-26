@@ -54,8 +54,7 @@ public class TextTextTextAdjacencyListVertexInputFormat
 
    @Override
    public Edge<Text, Text> decodeEdge(String s1, String s2) {
-     return EdgeFactory.create(new Text(s1),
-         new Text(s2));
+     return EdgeFactory.create(new Text(s1),new Text(s2));
    }
  }
 

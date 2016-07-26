@@ -181,10 +181,10 @@ public class PNode {
 	 * @param nodeId Hacia el vertice que se dirige
 	 * @param edgeValue El valor de la arista.
 	 */
-	public void addPEdge(String nodeId, Property property){
+	public void addPEdge(String nodeId, PropertyList propertyList){
 		DefaultEdge<Text, Text> edge = new DefaultEdge<Text,Text>();
 		edge.setTargetVertexId(new Text(nodeId));
-		edge.setValue(new Text(property.getProperty()));
+		edge.setValue(new Text(propertyList.getJSONasString()));
 		vertex.addEdge(edge);
 		PEdge pEdge = new PEdge(edge);
 		pEdges.add(pEdge);

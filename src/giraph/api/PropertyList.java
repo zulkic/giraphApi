@@ -3,7 +3,7 @@ package giraph.api;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Property {
+public class PropertyList {
 	private JSONObject json = new JSONObject();
 	
 	public void addProperty(String key, String value)
@@ -15,7 +15,7 @@ public class Property {
 		}		
 	}
 	
-	public String getProperty(){
+	public String getJSONasString(){
 		return json.toString();
 	}
 
